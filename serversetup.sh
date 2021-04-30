@@ -191,10 +191,10 @@ then
         printf "\n"
         cd /home/$name/
         touch ./activate.sh
-        printf "cd /home/$name/pyvenv/\nsource ./bin/activate\necho \"Welcome\"\necho \"If you want to get to the libs, run:\"\necho \"cd ./lib/python3.8/site-packages/GA/\"\n" > ./activate.sh
+        printf "cd /home/$name/pyvenv/virtual/\nsource ./bin/activate\necho \"Welcome\"\necho \"If you want to get to the libs, run:\"\necho \"cd ./lib/python3.8/site-packages/GA/\"\n" > ./activate.sh
         touch ./deactivate.sh
         printf "cd /home/$name/\ndeactivate\necho \"Goodbye\"\n" > ./deactivate.sh
-        ln -s /home/$name/deactivate.sh /home/$name/pyvenv/deactivate.sh
+        ln -s /home/$name/deactivate.sh /home/$name/pyvenv/virtual/deactivate.sh
         printf "\n"
     fi
 
