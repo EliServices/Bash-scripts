@@ -143,7 +143,7 @@ printf "\033[1;32mDo you wish to install the following recommended packages?\n"
 printf "tree\n"
 printf "fail2ban\n"
 printf "python3-pip\n"
-printf "(y/n):"
+printf "(y/n)\033[0m:"
 read installnew1
 if [ "$installnew1" = "y" ]
 then
