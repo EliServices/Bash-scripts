@@ -141,6 +141,8 @@ fi
 #Install recommended packages:
 printf "\033[1;32mDo you wish to install the following recommended packages?\n"
 printf "tree\n"
+printf "wireless-tools\n"
+printf "net-tools\n"
 printf "fail2ban\n"
 printf "python3-pip\n"
 printf "(y/n)\033[0m:"
@@ -148,7 +150,7 @@ read installnew1
 if [ "$installnew1" = "y" ]
 then
     printf "\033[1;33mPlease confirm if necessary!\033[0m\n\n"
-    apt install tree fail2ban python3-pip
+    apt install tree wireless-tools net-tools fail2ban python3-pip
     printf "\n"
 fi
 
